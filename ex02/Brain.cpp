@@ -31,4 +31,18 @@ Brain::~Brain(void)
 	std::cout << "Brain : Destructor called" << std::endl;
 }
 
+void Brain::setId(int index, std::string &msg)
+{
+	if (index >= 0 && index <= 100)
+		this->ideas[index] = msg;
+	else
+		std::cout << "index should be between 0 and 100" << std::endl;
+}
 
+std::string Brain::getIdea(int index)
+{
+	if (index >= 0 && index <= 100)
+		return (this->ideas[index]);
+	else
+		return ("");
+}

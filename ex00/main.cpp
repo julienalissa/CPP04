@@ -4,7 +4,6 @@
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 
-
 int main()
 {
 	const Animal* meta = new Animal();
@@ -34,6 +33,6 @@ int main()
 	std::cout << WrongAn->getType() << " " << std::endl;
 	WrongAn->makeSound();
 	delete WrongAn;
-
 	return (0);
+
 }

@@ -5,34 +5,6 @@
 
 int main()
 {
-	// const Animal* meta = new Animal();
-	// const Animal* j = new Dog();
-	// const Animal* i = new Cat();
-	// std::cout << j->getType() << " " << std::endl;
-	// std::cout << i->getType() << " " << std::endl;
-	// i->makeSound(); //will output the cat sound!
-	// j->makeSound();
-	// meta->makeSound();
-	// delete meta;
-	// delete j;
-	// delete i;
-
-	// std::cout << std::endl << "------" << std::endl;
-
-	// std::cout << "avec polymorphisme" << std::endl;
-	// const Animal* an = new Cat();
-	// std::cout << an->getType() << " " << std::endl;
-	// an->makeSound();
-	// delete an;
-
-	// std::cout << std::endl << "------" << std::endl;
-
-	// std::cout << "sans polymorphisme" << std::endl;
-	// const WrongAnimal* WrongAn = new WrongCat();
-	// std::cout << WrongAn->getType() << " " << std::endl;
-	// WrongAn->makeSound(); // Doit afficher le son du WrongAnimal (parce qu'il n'y a PAS de virtual)
-	// delete WrongAn;
-
 	const int	nbAnimals = 4;
 	Animal *Animals[nbAnimals];
 
@@ -57,9 +29,26 @@ int main()
 		delete Animals[i];
 		i++;
 	}
-	Animal al;
+	Cat chat;
 
-	
+	chat.setId(0, "Chat0");
+	chat.setId(1, "Chat1");
+
+
+	std::cout << chat.getIdea(0) << std::endl;
+	std::cout << chat.getIdea(1) << std::endl;
+
+	std::cout << std::endl << std::endl;
+	Dog chien;
+
+	chien.setId(0, "Chien0");
+	chien.setId(1, "Chien1");
+
+	std::cout << std::endl << std::endl;
+
+	std::cout << chien.getIdea(0) << std::endl;
+	std::cout << chien.getIdea(1) << std::endl;
+	//Animal *test = new Animal;
 
 	return (0);
 }

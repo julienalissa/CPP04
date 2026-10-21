@@ -18,7 +18,8 @@ public:
 	Dog &operator=(const Dog &other);
 	~Dog(void);
 	void 	makeSound() const;
-
+	void setId(int index, std::string msg);
+	std::string getIdea(int index);
 };
 
 #endif

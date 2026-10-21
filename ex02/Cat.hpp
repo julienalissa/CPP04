@@ -17,6 +17,8 @@ public:
 	Cat &operator=(const Cat &other);
 	~Cat(void);
 	void 	makeSound() const;
+	void setId(int index, std::string msg);
+	std::string getIdea(int index);
 };
 
 #endif
