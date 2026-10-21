@@ -32,7 +32,7 @@ int main()
 	std::cout << "sans polymorphisme" << std::endl;
 	const WrongAnimal* WrongAn = new WrongCat();
 	std::cout << WrongAn->getType() << " " << std::endl;
-	WrongAn->makeSound(); // Doit afficher le son du WrongAnimal (parce qu'il n'y a PAS de virtual)
+	WrongAn->makeSound();
 	delete WrongAn;
 
 	return (0);
